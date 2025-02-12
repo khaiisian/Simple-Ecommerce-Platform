@@ -27,7 +27,7 @@ Route::get('/', function () {
             return redirect()->route('admin.item');
         }
     }
-    return view('welcome');
+    return view('auth.register');
 });
 
 

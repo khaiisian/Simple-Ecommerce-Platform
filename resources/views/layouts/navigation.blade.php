@@ -18,6 +18,9 @@
                     <x-nav-link :href="route('admin.item')" :active="request()->routeIs('admin.item')">
                         {{ __('Item') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('admin.orders')" :active="request()->routeIs('admin.orders')">
+                        {{ __('Orders') }}
+                    </x-nav-link>
                     @elseif(Auth::user()->role=='user')
                     <x-nav-link :href="route('user.item')" :active="request()->routeIs('user.item')">
                         {{ __('Item') }}

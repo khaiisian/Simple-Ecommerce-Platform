@@ -72,7 +72,7 @@
                     <td>{{ $item->item_name }}</td>
                     <td>{{ $item->item_desc }}</td>
                     <td>{{ $item->item_desc }}</td>
-                    <td>{{ $item->image }}</td>
+                    <td><img class="w-14 h-14" src="{{asset('storage/images/'. $item->image )}}" alt=""></td>
                     <td>
                         <?php
                         foreach ($categories as $category) {
